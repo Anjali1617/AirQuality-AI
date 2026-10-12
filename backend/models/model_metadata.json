@@ -1,0 +1,39 @@
+{
+  "model_name": "Random Forest Regressor",
+  "version": "1.0.0",
+  "algorithm": "RandomForestRegressor",
+  "target": "C6H6(GT)",
+  "target_unit": "\u00b5g/m\u00b3",
+  "features": [
+    "PT08.S1(CO)",
+    "PT08.S2(NMHC)",
+    "PT08.S3(NOx)",
+    "PT08.S4(NO2)",
+    "PT08.S5(O3)",
+    "T",
+    "RH",
+    "AH",
+    "Hour",
+    "DayOfWeek"
+  ],
+  "train_samples": 6293,
+  "validation_samples": 1349,
+  "test_samples": 1349,
+  "test_mae": 0.0124,
+  "test_rmse": 0.0255,
+  "test_r2": 1.0,
+  "date_ranges": {
+    "train": [
+      "2004-03-10 18:00:00",
+      "2004-12-04 02:00:00"
+    ],
+    "validation": [
+      "2004-12-04 03:00:00",
+      "2005-02-04 04:00:00"
+    ],
+    "test": [
+      "2005-02-04 05:00:00",
+      "2005-04-04 14:00:00"
+    ]
+  }
+}

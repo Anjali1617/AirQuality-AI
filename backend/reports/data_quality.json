@@ -1,0 +1,120 @@
+{
+  "dataset_name": "UCI Air Quality Dataset",
+  "citation": "Vito, S. (2008). Air Quality. UCI Machine Learning Repository. https://doi.org/10.24432/C59K5F",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "source_location": "Field deployed chemical multisensor device in an Italian city road network",
+  "raw_file": "AirQualityUCI.csv",
+  "total_raw_rows": 9357,
+  "total_columns": 16,
+  "date_range": {
+    "start": "2004-03-10 18:00:00",
+    "end": "2005-04-04 14:00:00",
+    "total_hours": 9357
+  },
+  "missing_value_marker": "-200 (treated correctly as NaN)",
+  "missing_analysis": {
+    "CO(GT)": {
+      "missing_count": 1683,
+      "missing_pct": 17.99,
+      "valid_count": 7674
+    },
+    "PT08.S1(CO)": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "NMHC(GT)": {
+      "missing_count": 8443,
+      "missing_pct": 90.23,
+      "valid_count": 914
+    },
+    "C6H6(GT)": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "PT08.S2(NMHC)": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "NOx(GT)": {
+      "missing_count": 1639,
+      "missing_pct": 17.52,
+      "valid_count": 7718
+    },
+    "PT08.S3(NOx)": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "NO2(GT)": {
+      "missing_count": 1642,
+      "missing_pct": 17.55,
+      "valid_count": 7715
+    },
+    "PT08.S4(NO2)": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "PT08.S5(O3)": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "T": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "RH": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    },
+    "AH": {
+      "missing_count": 366,
+      "missing_pct": 3.91,
+      "valid_count": 8991
+    }
+  },
+  "primary_target": {
+    "name": "C6H6(GT)",
+    "unit": "\u00b5g/m\u00b3",
+    "total_valid_samples": 8991,
+    "missing_samples": 366
+  },
+  "feature_columns": [
+    "PT08.S1(CO)",
+    "PT08.S2(NMHC)",
+    "PT08.S3(NOx)",
+    "PT08.S4(NO2)",
+    "PT08.S5(O3)",
+    "T",
+    "RH",
+    "AH",
+    "Hour",
+    "DayOfWeek"
+  ],
+  "chronological_splits": {
+    "train": {
+      "count": 6293,
+      "percentage": 70.0,
+      "start": "2004-03-10 18:00:00",
+      "end": "2004-12-04 02:00:00"
+    },
+    "validation": {
+      "count": 1349,
+      "percentage": 15.0,
+      "start": "2004-12-04 03:00:00",
+      "end": "2005-02-04 04:00:00"
+    },
+    "test": {
+      "count": 1349,
+      "percentage": 15.0,
+      "start": "2005-02-04 05:00:00",
+      "end": "2005-04-04 14:00:00"
+    }
+  }
+}

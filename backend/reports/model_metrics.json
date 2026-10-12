@@ -1,0 +1,680 @@
+{
+  "model_name": "Random Forest Regressor",
+  "target": "C6H6(GT)",
+  "target_unit": "\u00b5g/m\u00b3",
+  "features": [
+    "PT08.S1(CO)",
+    "PT08.S2(NMHC)",
+    "PT08.S3(NOx)",
+    "PT08.S4(NO2)",
+    "PT08.S5(O3)",
+    "T",
+    "RH",
+    "AH",
+    "Hour",
+    "DayOfWeek"
+  ],
+  "evaluation": {
+    "test_mae": 0.0124,
+    "test_rmse": 0.0255,
+    "test_r2": 1.0,
+    "val_mae": 0.0144,
+    "val_rmse": 0.0665,
+    "val_r2": 0.9999
+  },
+  "all_models": [
+    {
+      "model_name": "Ridge Regression (Baseline)",
+      "val_mae": 1.1596,
+      "val_rmse": 1.616,
+      "val_r2": 0.9471,
+      "test_mae": 1.6854,
+      "test_rmse": 2.0013,
+      "test_r2": 0.8914
+    },
+    {
+      "model_name": "Random Forest Regressor",
+      "val_mae": 0.0144,
+      "val_rmse": 0.0665,
+      "val_r2": 0.9999,
+      "test_mae": 0.0124,
+      "test_rmse": 0.0255,
+      "test_r2": 1.0
+    },
+    {
+      "model_name": "Gradient Boosting Regressor",
+      "val_mae": 0.0137,
+      "val_rmse": 0.028,
+      "val_r2": 1.0,
+      "test_mae": 0.0149,
+      "test_rmse": 0.0259,
+      "test_r2": 1.0
+    }
+  ],
+  "actual_vs_predicted_sample": [
+    {
+      "timestamp": "2005-02-04 05:00:00",
+      "actual": 2.2,
+      "predicted": 2.2,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-04 18:00:00",
+      "actual": 9.4,
+      "predicted": 9.4,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-05 07:00:00",
+      "actual": 7.3,
+      "predicted": 7.3,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-05 20:00:00",
+      "actual": 5.2,
+      "predicted": 5.2,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-06 09:00:00",
+      "actual": 2.0,
+      "predicted": 2.0,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-06 22:00:00",
+      "actual": 2.6,
+      "predicted": 2.6,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-07 11:00:00",
+      "actual": 6.5,
+      "predicted": 6.5,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-08 00:00:00",
+      "actual": 2.1,
+      "predicted": 2.09,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-02-08 13:00:00",
+      "actual": 6.9,
+      "predicted": 6.9,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-12 06:00:00",
+      "actual": 7.3,
+      "predicted": 7.3,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-12 19:00:00",
+      "actual": 24.6,
+      "predicted": 24.59,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-02-13 08:00:00",
+      "actual": 11.9,
+      "predicted": 11.9,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-13 21:00:00",
+      "actual": 3.7,
+      "predicted": 3.7,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-14 10:00:00",
+      "actual": 11.6,
+      "predicted": 11.6,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-14 23:00:00",
+      "actual": 6.6,
+      "predicted": 6.59,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-02-15 12:00:00",
+      "actual": 4.4,
+      "predicted": 4.4,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-16 01:00:00",
+      "actual": 10.7,
+      "predicted": 10.7,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-16 14:00:00",
+      "actual": 6.0,
+      "predicted": 6.01,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-02-17 03:00:00",
+      "actual": 3.6,
+      "predicted": 3.6,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-17 16:00:00",
+      "actual": 5.0,
+      "predicted": 4.93,
+      "residual": 0.07
+    },
+    {
+      "timestamp": "2005-02-18 05:00:00",
+      "actual": 0.8,
+      "predicted": 0.8,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-18 18:00:00",
+      "actual": 12.6,
+      "predicted": 12.61,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-02-19 07:00:00",
+      "actual": 4.5,
+      "predicted": 4.5,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-19 20:00:00",
+      "actual": 12.3,
+      "predicted": 12.31,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-02-20 09:00:00",
+      "actual": 1.6,
+      "predicted": 1.61,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-02-20 22:00:00",
+      "actual": 3.1,
+      "predicted": 3.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-21 11:00:00",
+      "actual": 7.0,
+      "predicted": 7.03,
+      "residual": -0.03
+    },
+    {
+      "timestamp": "2005-02-22 00:00:00",
+      "actual": 2.1,
+      "predicted": 2.1,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-22 13:00:00",
+      "actual": 10.0,
+      "predicted": 10.0,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-23 02:00:00",
+      "actual": 1.8,
+      "predicted": 1.87,
+      "residual": -0.07
+    },
+    {
+      "timestamp": "2005-02-23 15:00:00",
+      "actual": 9.9,
+      "predicted": 9.9,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-24 04:00:00",
+      "actual": 1.3,
+      "predicted": 1.3,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-24 17:00:00",
+      "actual": 13.2,
+      "predicted": 13.19,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-02-25 06:00:00",
+      "actual": 4.1,
+      "predicted": 4.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-25 19:00:00",
+      "actual": 12.6,
+      "predicted": 12.61,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-02-26 08:00:00",
+      "actual": 3.9,
+      "predicted": 3.9,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-26 21:00:00",
+      "actual": 8.1,
+      "predicted": 8.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-27 10:00:00",
+      "actual": 6.4,
+      "predicted": 6.4,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-02-27 23:00:00",
+      "actual": 3.9,
+      "predicted": 3.9,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-02-28 12:00:00",
+      "actual": 2.0,
+      "predicted": 2.0,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-01 01:00:00",
+      "actual": 0.9,
+      "predicted": 0.91,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-03-01 14:00:00",
+      "actual": 3.1,
+      "predicted": 3.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-02 03:00:00",
+      "actual": 0.9,
+      "predicted": 0.89,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-03-02 16:00:00",
+      "actual": 9.1,
+      "predicted": 9.15,
+      "residual": -0.05
+    },
+    {
+      "timestamp": "2005-03-03 05:00:00",
+      "actual": 4.0,
+      "predicted": 3.98,
+      "residual": 0.02
+    },
+    {
+      "timestamp": "2005-03-03 18:00:00",
+      "actual": 16.7,
+      "predicted": 16.7,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-04 07:00:00",
+      "actual": 7.5,
+      "predicted": 7.5,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-04 20:00:00",
+      "actual": 18.5,
+      "predicted": 18.5,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-05 09:00:00",
+      "actual": 8.7,
+      "predicted": 8.7,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-05 22:00:00",
+      "actual": 7.8,
+      "predicted": 7.8,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-06 11:00:00",
+      "actual": 2.0,
+      "predicted": 2.0,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-07 00:00:00",
+      "actual": 3.2,
+      "predicted": 3.2,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-07 13:00:00",
+      "actual": 4.3,
+      "predicted": 4.3,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-08 02:00:00",
+      "actual": 3.1,
+      "predicted": 3.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-08 15:00:00",
+      "actual": 9.7,
+      "predicted": 9.7,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-09 04:00:00",
+      "actual": 2.5,
+      "predicted": 2.4,
+      "residual": 0.1
+    },
+    {
+      "timestamp": "2005-03-09 17:00:00",
+      "actual": 10.2,
+      "predicted": 10.23,
+      "residual": -0.03
+    },
+    {
+      "timestamp": "2005-03-10 06:00:00",
+      "actual": 3.5,
+      "predicted": 3.5,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-10 19:00:00",
+      "actual": 19.8,
+      "predicted": 19.82,
+      "residual": -0.02
+    },
+    {
+      "timestamp": "2005-03-11 08:00:00",
+      "actual": 13.8,
+      "predicted": 13.8,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-11 22:00:00",
+      "actual": 6.8,
+      "predicted": 6.8,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-12 11:00:00",
+      "actual": 6.7,
+      "predicted": 6.75,
+      "residual": -0.05
+    },
+    {
+      "timestamp": "2005-03-13 00:00:00",
+      "actual": 2.8,
+      "predicted": 2.8,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-13 13:00:00",
+      "actual": 8.5,
+      "predicted": 8.47,
+      "residual": 0.03
+    },
+    {
+      "timestamp": "2005-03-14 02:00:00",
+      "actual": 5.3,
+      "predicted": 5.3,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-14 15:00:00",
+      "actual": 7.7,
+      "predicted": 7.68,
+      "residual": 0.02
+    },
+    {
+      "timestamp": "2005-03-15 04:00:00",
+      "actual": 1.1,
+      "predicted": 1.1,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-15 17:00:00",
+      "actual": 14.2,
+      "predicted": 14.2,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-16 06:00:00",
+      "actual": 3.3,
+      "predicted": 3.3,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-16 19:00:00",
+      "actual": 26.2,
+      "predicted": 26.2,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-17 08:00:00",
+      "actual": 18.9,
+      "predicted": 18.92,
+      "residual": -0.02
+    },
+    {
+      "timestamp": "2005-03-17 21:00:00",
+      "actual": 18.4,
+      "predicted": 18.4,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-18 10:00:00",
+      "actual": 17.6,
+      "predicted": 17.62,
+      "residual": -0.02
+    },
+    {
+      "timestamp": "2005-03-18 23:00:00",
+      "actual": 6.8,
+      "predicted": 6.8,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-19 12:00:00",
+      "actual": 8.9,
+      "predicted": 8.9,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-20 01:00:00",
+      "actual": 5.9,
+      "predicted": 5.89,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-03-20 14:00:00",
+      "actual": 2.2,
+      "predicted": 2.2,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-21 03:00:00",
+      "actual": 2.7,
+      "predicted": 2.73,
+      "residual": -0.03
+    },
+    {
+      "timestamp": "2005-03-21 16:00:00",
+      "actual": 9.2,
+      "predicted": 9.2,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-22 05:00:00",
+      "actual": 1.6,
+      "predicted": 1.6,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-22 18:00:00",
+      "actual": 20.9,
+      "predicted": 20.9,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-23 07:00:00",
+      "actual": 6.1,
+      "predicted": 6.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-23 20:00:00",
+      "actual": 32.0,
+      "predicted": 32.0,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-24 09:00:00",
+      "actual": 15.0,
+      "predicted": 15.01,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-03-24 22:00:00",
+      "actual": 17.8,
+      "predicted": 17.8,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-25 11:00:00",
+      "actual": 9.5,
+      "predicted": 9.49,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-03-26 00:00:00",
+      "actual": 12.1,
+      "predicted": 12.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-26 13:00:00",
+      "actual": 6.6,
+      "predicted": 6.58,
+      "residual": 0.02
+    },
+    {
+      "timestamp": "2005-03-27 02:00:00",
+      "actual": 3.3,
+      "predicted": 3.3,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-27 15:00:00",
+      "actual": 2.7,
+      "predicted": 2.7,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-28 04:00:00",
+      "actual": 2.0,
+      "predicted": 2.01,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-03-28 17:00:00",
+      "actual": 6.2,
+      "predicted": 6.2,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-29 06:00:00",
+      "actual": 4.7,
+      "predicted": 4.69,
+      "residual": 0.01
+    },
+    {
+      "timestamp": "2005-03-29 19:00:00",
+      "actual": 13.4,
+      "predicted": 13.4,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-03-30 08:00:00",
+      "actual": 14.7,
+      "predicted": 14.64,
+      "residual": 0.06
+    },
+    {
+      "timestamp": "2005-03-30 21:00:00",
+      "actual": 8.8,
+      "predicted": 8.8,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-31 10:00:00",
+      "actual": 4.9,
+      "predicted": 4.9,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-03-31 23:00:00",
+      "actual": 2.1,
+      "predicted": 2.1,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-04-01 12:00:00",
+      "actual": 4.0,
+      "predicted": 4.0,
+      "residual": 0.0
+    },
+    {
+      "timestamp": "2005-04-02 01:00:00",
+      "actual": 1.9,
+      "predicted": 1.9,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-04-02 14:00:00",
+      "actual": 2.3,
+      "predicted": 2.31,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-04-03 03:00:00",
+      "actual": 2.8,
+      "predicted": 2.8,
+      "residual": -0.0
+    },
+    {
+      "timestamp": "2005-04-03 16:00:00",
+      "actual": 6.3,
+      "predicted": 6.31,
+      "residual": -0.01
+    },
+    {
+      "timestamp": "2005-04-04 05:00:00",
+      "actual": 1.3,
+      "predicted": 1.3,
+      "residual": 0.0
+    }
+  ]
+}
